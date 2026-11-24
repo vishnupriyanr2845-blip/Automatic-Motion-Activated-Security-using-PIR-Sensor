@@ -61,6 +61,7 @@ Step 7: Save Your Work
 
 # Code:
 
+```
 int ledPin = 13;
 int inPin = 7;
 
@@ -84,7 +85,7 @@ void loop() {
   delay(100);
 }
 
-
+```
 # Output:
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b3aa60fc-8761-4ff4-b767-9669897bb28e" />
