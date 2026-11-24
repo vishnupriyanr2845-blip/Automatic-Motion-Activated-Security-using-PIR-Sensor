@@ -61,10 +61,33 @@ Step 7: Save Your Work
 
 # Code:
 
+int ledPin = 13;
+int inPin = 7;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+  pinMode(inPin, INPUT);
+}
+
+void loop() {
+  int val = digitalRead(inPin);
+
+  if (val == HIGH) {
+    digitalWrite(ledPin, HIGH);
+    Serial.println("Motion Detected");
+  } else {
+    digitalWrite(ledPin, LOW);
+    Serial.println("No Motion");
+  }
+
+  delay(100);
+}
 
 
 # Output:
 
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b3aa60fc-8761-4ff4-b767-9669897bb28e" />
 
 
 
